@@ -21,9 +21,9 @@ class Matrix {
     var w: Int
     var h: Int
     
-    init(width: Int, height: Int, columns: [Vector]) {
-        self.w = width
-        self.h = height
+    init(columns: [Vector]) {
+        self.h = columns[0].content.count
+        self.w = columns.count
         
         self.columns = columns
     }
@@ -44,6 +44,29 @@ class Matrix {
         }
         
         print(output)
+        
+    }
+    
+    func inverse() -> Matrix {
+        assert(self.w == self.h, "Matrix not a square")
+        
+        return Matrix(columns: [])
+        
+    }
+    
+    func transpose() -> Matrix {
+        
+        var columns: [Vector] = []
+        
+        for x in 0...self.h-1 {
+            var row: [Double] = []
+            for y in 0...self.w-1 {
+                row.append(self.columns[y].content[x])
+            }
+            columns.append(Vector(n: row.count, content: row))
+        }
+        
+        return Matrix(columns: columns)
         
     }
     
@@ -78,6 +101,8 @@ class Matrix {
     static func dot_product(a: Matrix, b: Matrix) -> Matrix {
         // B*A
         
+        assert(a.h == b.w, "Matrix's not compatible with h: \(a.h) w: \(b.w)")
+        
         let w = a.w
         let h = a.h
         
@@ -97,9 +122,14 @@ class Matrix {
         }
         
         
-        let c = Matrix(width: w, height: w, columns: columns)
+        let c = Matrix(columns: columns)
         
         return c
+    }
+    
+    
+    static func add(a: Matrix, b: Matrix) {
+        
     }
     
 }

@@ -12,10 +12,10 @@ class Matrix2x2: Matrix {
     
     init(columns: [Vector2]) {
         
-        super.init(width: 2, height: 2, columns: columns)
+        super.init(columns: columns)
     }
     
-    func inverse() -> Matrix {
+    override func inverse() -> Matrix {
         
         // Swap A and D
         let tmp = self.columns[1].content[1]

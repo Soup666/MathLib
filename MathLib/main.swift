@@ -40,20 +40,16 @@ print("Hello, World!")
 //print(ae.getContent())
 
 
-let a = Matrix( width: 3, height: 2, columns: [
+let a = Matrix(columns: [
     Vector2(content: [2, 1]),
     Vector2(content: [3, 4]),
     Vector2(content: [5, 2])
 ])
 
 
-let b = Matrix( width: 2, height: 3, columns: [
-    Vector2(content: [3, 2, 2]),
-    Vector2(content: [1, 4, 3])
-])
 
 a.view()
-b.view()
 
-let c = Matrix.dot_product(a: a, b: b)
-c.view()
+
+let d = a.transpose()
+d.view()

@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class Matrix4x4: Matrix {
+    
+    
+    init(columns: [Vector4]) {
+        
+        super.init(width: 4, height: 4, columns: columns)
+    }
+    
+    
+}

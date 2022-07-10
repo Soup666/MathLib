@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class Vector2: Vector {
+    
+    init(content: [Double]) {
+        super.init(n: 2, content: content)
+    }
+    
+    
+}

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A749C342287B597600F4A44B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C341287B597600F4A44B /* main.swift */; };
+		A749C349287B5B7600F4A44B /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C348287B5B7600F4A44B /* Vector2.swift */; };
+		A749C34B287B5C5600F4A44B /* Matrix2x2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C34A287B5C5600F4A44B /* Matrix2x2.swift */; };
+		A749C34D287B5E1500F4A44B /* Matrix4x4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C34C287B5E1500F4A44B /* Matrix4x4.swift */; };
+		A749C34F287B5E2E00F4A44B /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C34E287B5E2E00F4A44B /* Vector4.swift */; };
+		A749C351287B5E4900F4A44B /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C350287B5E4900F4A44B /* Vector.swift */; };
+		A749C353287B601300F4A44B /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A749C352287B601300F4A44B /* Matrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		A749C33E287B597600F4A44B /* MathLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MathLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A749C341287B597600F4A44B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A749C348287B5B7600F4A44B /* Vector2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2.swift; sourceTree = "<group>"; };
+		A749C34A287B5C5600F4A44B /* Matrix2x2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix2x2.swift; sourceTree = "<group>"; };
+		A749C34C287B5E1500F4A44B /* Matrix4x4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix4x4.swift; sourceTree = "<group>"; };
+		A749C34E287B5E2E00F4A44B /* Vector4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector4.swift; sourceTree = "<group>"; };
+		A749C350287B5E4900F4A44B /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		A749C352287B601300F4A44B /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				A749C341287B597600F4A44B /* main.swift */,
+				A749C348287B5B7600F4A44B /* Vector2.swift */,
+				A749C34A287B5C5600F4A44B /* Matrix2x2.swift */,
+				A749C34C287B5E1500F4A44B /* Matrix4x4.swift */,
+				A749C34E287B5E2E00F4A44B /* Vector4.swift */,
+				A749C350287B5E4900F4A44B /* Vector.swift */,
+				A749C352287B601300F4A44B /* Matrix.swift */,
 			);
 			path = MathLib;
 			sourceTree = "<group>";
@@ -120,7 +138,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A749C353287B601300F4A44B /* Matrix.swift in Sources */,
 				A749C342287B597600F4A44B /* main.swift in Sources */,
+				A749C34B287B5C5600F4A44B /* Matrix2x2.swift in Sources */,
+				A749C349287B5B7600F4A44B /* Vector2.swift in Sources */,
+				A749C34F287B5E2E00F4A44B /* Vector4.swift in Sources */,
+				A749C351287B5E4900F4A44B /* Vector.swift in Sources */,
+				A749C34D287B5E1500F4A44B /* Matrix4x4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
